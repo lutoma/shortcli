@@ -28,7 +28,7 @@ def main()
 		abort "Server returned: Invalid username / password"
 	end
 
-	post_today = api.get_post_for(Date.today - 1)
+	post_today = api.get_post_for(Date.today)
 
 	if post_today
 		puts "Found existing post for #{post_today.date}, switching to edit mode."
